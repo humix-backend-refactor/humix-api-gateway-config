@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- deployment.yaml
+- service.yaml
+
+namespace: gateway
+
+images:
+- name: imagem
+  newName: blgianinis/humix-spotify-client
+  newTag: ad0c13c20a43b1386eb7c17c6f02f43faf3c7f40
