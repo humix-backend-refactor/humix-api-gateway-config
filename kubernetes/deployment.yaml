@@ -1,12 +1,19 @@
-apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization
-resources:
-- deployment.yaml
-- service.yaml
-
-namespace: gateway
-
-images:
-- name: imagem
-  newName: blgianinis/humix-spotify-client
-  newTag: ad0c13c20a43b1386eb7c17c6f02f43faf3c7f40
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: humix-api-gateway
+spec:
+  revisionHistoryLimit: 0
+  selector:
+    matchLabels:
+      app: humix-api-gateway
+  template:
+    metadata:
+      labels:
+        app: humix-api-gateway
+    spec:
+      containers:
+      - name: humix-api-gateway
+        image: imagem
+        ports:
+        - containerPort: 8080
