@@ -8,5 +8,5 @@ namespace: gateway
 
 images:
 - name: imagem
-  newName: blgianinis/humix-spotify-client
-  newTag: ad0c13c20a43b1386eb7c17c6f02f43faf3c7f40
+  newName: blgianini/canal-deploy
+  newTag: b34f4586fedcc0c9212e8a8bea74d3a69c9e93e1
