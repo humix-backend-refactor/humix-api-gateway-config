@@ -8,5 +8,5 @@ namespace: gateway
 
 images:
 - name: imagem
-  newName: blgianini/canal-deploy
-  newTag: b34f4586fedcc0c9212e8a8bea74d3a69c9e93e1
+  newName: blgianini/humix
+  newTag: 891124b1027ab72145616a4f18cc4e89e7e72322
