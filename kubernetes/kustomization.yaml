@@ -9,4 +9,4 @@ namespace: gateway
 images:
 - name: imagem
   newName: blgianini/humix
-  newTag: 79f9afc73cb0d99ed489abbbb83605ea7e9d9bc8
+  newTag: 9a687a4f76dda491f59f40282214f1850c95c996
